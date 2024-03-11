@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="htec.css">
+    <!-- <script lang="javascript" type="text/javascript" src="health.js"> </script> -->
+</head>
+<body>
+
+  <header>
+    <div class="first">
+        <div id="second">
+            <h1><span class="fouth">National Health Individual </span> Database</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="current"><a href="homepage.html">Home</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="servicepage.html">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="pics" > 
+  <div class="signup">
+      <!-- <h1>Sign Up</h1> -->
+      <form action="" class="form" id="form">
+          <div class="form-control">
+             <!-- <label>First Name</label><br>   -->
+             <input type="text" placeholder="Username" id="username" >
+             <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+             <!-- <label>Password</label><br>    -->
+             <input type="password" placeholder="Enter Password" id="password" >
+             <small>Error message</small>
+          </div><br>
+
+          <button id="submit"> Login </button><br>
+          <!-- <div id="last"> 
+              <p> Forget Password?  <a href="loginpage.html"> Reset Password</a> </p>
+          </div> -->
+      </form>
+
+  </div>
+</div> 
+     
+   <footer class="footer">
+    <p>National Health Individual Database &copy; 2024</p>
+ </footer>
+
+<script>
+  
+
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+
+    form.addEventListener("submit",(e)=> {
+        e.preventDefault();
+
+        checkInput();
+    })
+
+    function checkInput(){
+        const passwordValue = password.value.trim();
+        const usernameValue = username.value.trim();
+
+        if (usernameValue === ""){
+            setErrorFor(username, "username is blank");
+        }
+
+        else if(usernameValue.length <3 ){
+            setErrorFor(username,"User name is too short");
+        }
+
+        else if (usernameValue.length > 15){
+            setErrorFor(username , "username is too long");
+        }
+
+        else {
+            setSuccessFor(username);
+        }
+
+        // password validation
+        if(passwordValue === ""){
+            setErrorFor(password , "password is blank");
+        }
+
+        else if(passwordValue.length <3){
+            setErrorFor(password,"password is too short");
+        }
+
+        else if (passwordValue.length > 20){
+            setErrorFor(password ,"password is too long");
+        }
+
+        else {
+            setSuccessFor(password);
+        }
+
+    };
+
+    function setErrorFor(input, message){
+        const formControl = input.parentElement;
+        const small = formControl.querySelector("small");
+
+        small.innerText = message;
+        formControl.className ="form-control error";
+    };
+
+    function setSuccessFor(input){
+        const formControl = input.parentElement;
+        const small = formControl.querySelector("small");
+
+        formControl.className ="form-control success";
+    };
+    
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,228 @@
+body {
+    font: 15px/1.5 Arial,Helvetica,sans-serif;
+    padding: 0 ;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* for the header */
+header {
+    background-color: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #second {
+    float: left;
+}
+
+header #second h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight ,header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #13044e;
+    font-weight: bold;
+}
+
+header span{
+    color: #e8491d;
+}
+
+.section {
+    padding: 10px;
+    border-bottom: 2px solid #35424a;
+    min-height: 300px;
+    background: url(../NWS/yinmn-blue-linn-blomquist.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+section .sec {
+    margin-left: 30%;
+    color: #f4f4f4;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section .dec {
+    margin-left: 40%;
+}
+
+section .dec p i {
+    color: #e8491d;
+}
+
+section .dec p {
+    font-family: cursive;
+}
+
+#fifth {
+background-color: #35424a;    
+color: #f4f4f4;
+font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+height: 100px;
+padding: 15px;
+}
+
+aside {
+    float: left;
+    font-size: 15px;
+    color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+}
+
+#fifth h4 {
+   float: right;
+   padding-bottom: 0px;
+   padding-right: 80px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+}
+
+.fifth {
+    padding: 0 0 0 3px;
+}
+
+#fifth a {
+    text-decoration: none;
+    color: #e8491d;
+    cursor: pointer;
+}
+
+#fifth a:hover {
+    color:aqua;
+    font-family: cursive;
+}
+
+.footer {
+    padding: 20px;
+    /* margin-top: 20px; */
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+    border: 500px;
+}
+
+.pics {
+    padding: 10px;
+    border-bottom: 2px solid #35424a;
+    min-height: 300px;
+    background: url(../NWS/yinmn-blue-linn-blomquist.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.signup {
+    background: rgba(44, 62, 80, 0.9);
+    padding: 40px;
+    width: 250px;
+    margin-top: 90px;
+    margin-left: 180px;
+    margin:  0 auto;
+}
+
+.signup h1 {
+    color: #e8491d;
+}
+
+label{
+    color: #f4f4f4;
+}
+
+input{
+width: 240px;
+text-align: center;
+background: transparent;
+border: none;
+border-bottom: 2px solid #f4f4f4  ;
+font-size: 16px;
+height: 34px;
+color:#f4f4f4;
+}
+
+
+button {
+    border: none;
+    width: 190px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+    color:black;
+    background-color: #f4f4f4;
+}
+
+button:hover {
+    background-color: #e8491d;
+    color: #f4f4f4;
+}
+
+form #last a  {
+    color:#e8491d;
+}
+
+form #last p  {
+    color:#f4f4f4;
+    text-align: center;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control input {
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    
+} 
+
